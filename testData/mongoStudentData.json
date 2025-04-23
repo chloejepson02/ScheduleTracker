@@ -1,0 +1,19 @@
+{
+    "name": "Alice Smith",
+    "age": 20,
+    "courses": [
+      {
+        "name": "Math 101",
+        "teacher": "Mr. Johnson",
+        "platform": "Canvas",
+        "location": "Room 204"
+      },
+      {
+        "name": "Physics 201",
+        "teacher": "Dr. Yang",
+        "platform": "Blackboard",
+        "location": "Room 112"
+      }
+    ]
+  }
+  

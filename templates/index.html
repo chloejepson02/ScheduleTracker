@@ -1,0 +1,30 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Schedule Tracker</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; }
+    .student { margin-bottom: 40px; }
+    .course { margin-left: 20px; }
+  </style>
+</head>
+<body>
+  <h1>Student Schedules</h1>
+  {% for student in students %}
+    <div class="student">
+      <h2>{{ student.name }} (Age: {{ student.age }})</h2>
+      <h3>Courses:</h3>
+      <ul>
+        {% for course in student.courses %}
+          <li class="course">
+            <strong>{{ course.name }}</strong> with {{ course.teacher }}<br>
+            Platform: {{ course.platform }}<br>
+            Location: {{ course.location }}
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  {% endfor %}
+</body>
+</html>
